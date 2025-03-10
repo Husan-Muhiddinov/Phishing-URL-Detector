@@ -77,7 +77,7 @@ class FeatureExtraction:
         self.features.append(self.StatsReport())
 
 
-     # 1.UsingIp
+     # 1.Ip dan foydalanish
     def UsingIp(self):
         try:
             ipaddress.ip_address(self.url)
@@ -112,7 +112,7 @@ class FeatureExtraction:
             return -1
         return 1
     
-    # 5.Redirecting//
+    # 5.Qayta yoʻnaltirilmoqda//
     def redirecting(self):
         if self.url.rfind('//')>6:
             return -1

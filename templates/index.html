@@ -26,9 +26,9 @@
     
             <br>
             <form action="/" method ="post">
-                <input type="text" class="form__input" name ='url' id="url" placeholder="Enter URL" required="" />
+                <input type="text" class="form__input" name ='url' id="url" placeholder="URL kiriting" required="" />
                 <label for="url" class="form__label">URL</label>
-                <button class="button" role="button" >Check here</button>
+                <button class="button" role="button" >Tekshirish</button>
             </form>
            
     </div>
@@ -40,12 +40,12 @@
            
         <br>
         <h3 id="prediction"></h3>
-        <button class="button2" id="button2" role="button" onclick="window.open('{{url}}')" target="_blank" >Still want to Continue</button>
-        <button class="button1" id="button1" role="button"  onclick="window.open('{{url}}')" target="_blank">Continue</button>
+        <button class="button2" id="button2" role="button" onclick="window.open('{{url}}')" target="_blank" >Hali ham Davom etishni xohlayman</button>
+        <button class="button1" id="button1" role="button"  onclick="window.open('{{url}}')" target="_blank">Davom eting</button>
     </div> 
 </div>
 <br>
-<p>©2021 VAIBHAV BICHAVE</p>
+<p>©2025 AKT</p>
 </div>
 
     <!-- JavaScript -->
@@ -69,12 +69,12 @@
             }
             let txtx = num.toString();
             if(x<=1 && x>=0.50){
-                var label = "Website is "+txtx +"% safe to use...";
+                var label = "Website dan "+txtx +"% foydalanish uchun xavfsiz ...";
                 document.getElementById("prediction").innerHTML = label;
                 document.getElementById("button1").style.display="block";
             }
             else if (0<=x && x<0.50){
-                var label = "Website is "+txtx +"% unsafe to use..."
+                var label = "Website dan "+txtx +"% foydalanish xavfli ..."
                 document.getElementById("prediction").innerHTML = label ;
                 document.getElementById("button2").style.display="block";
             }
